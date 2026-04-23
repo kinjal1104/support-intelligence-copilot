@@ -1,0 +1,35 @@
+Build a Python module named next_best_action_generator.
+
+Goal:
+Given an original support ticket and the structured output from ticket_risk_analyzer, generate an operational response plan.
+
+The module should expose a function:
+
+generate_next_best_action(ticket_text: str, analysis: dict) -> dict
+
+Return a dictionary with:
+- priority: low | medium | high | critical
+- next_best_actions: list[str]
+- stakeholders_to_involve: list[str]
+- escalation_recommendation: str
+- executive_reply_draft: str
+- internal_notes: str
+
+Behavior:
+- High churn or revenue impact should increase urgency
+- Executive dissatisfaction should trigger stronger escalation language
+- Renewal timing should raise priority
+- Vendor switching references should increase retention risk
+- The reply draft should sound professional, calm, accountable, and executive-ready
+
+Implementation requirements:
+- Pure Python
+- Deterministic rule-based logic
+- Easy to read and demo
+- Handle missing analysis fields safely
+
+Also generate tests for:
+1. a high-risk churn-sensitive support case
+2. a low-risk standard support case
+
+Also generate one example usage file.

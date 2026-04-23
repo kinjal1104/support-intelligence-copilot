@@ -1,0 +1,16 @@
+Build a Support Intelligence Copilot system with 3 development units:
+
+1. ticket_risk_analyzer  
+   - analyzes support tickets  
+   - detects escalation risk, churn intent, revenue impact  
+
+2. next_best_action_generator  
+   - takes analyzer output  
+   - generates next steps, stakeholders, and response  
+
+3. support_dashboard  
+   - Streamlit UI  
+   - connects both modules  
+   - allows user to input ticket and view outputs  
+
+Define architecture.json connecting these dev units logically.

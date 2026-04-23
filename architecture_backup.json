@@ -1,0 +1,35 @@
+{
+  "project_name": "Support Intelligence Copilot",
+  "description": "AI-native decision support for revenue-aware customer operations",
+  "dev_units": [
+    {
+      "id": "ticket_risk_analyzer",
+      "name": "ticket_risk_analyzer",
+      "description": "Analyzes support tickets for escalation risk, churn intent, urgency, executive dissatisfaction, renewal timing, vendor-switching language, and revenue impact."
+    },
+    {
+      "id": "next_best_action_generator",
+      "name": "next_best_action_generator",
+      "description": "Takes ticket analysis output and generates priority, next-best actions, stakeholders to involve, escalation recommendation, and executive-ready reply draft."
+    },
+    {
+      "id": "support_dashboard",
+      "name": "support_dashboard",
+      "description": "Streamlit UI that connects ticket analysis and action generation into a demoable end-to-end workflow."
+    }
+  ],
+  "edges": [
+    {
+      "from": "ticket_risk_analyzer",
+      "to": "next_best_action_generator"
+    },
+    {
+      "from": "ticket_risk_analyzer",
+      "to": "support_dashboard"
+    },
+    {
+      "from": "next_best_action_generator",
+      "to": "support_dashboard"
+    }
+  ]
+}

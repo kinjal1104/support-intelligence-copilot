@@ -1,0 +1,39 @@
+Build a Python module named ticket_risk_analyzer.
+
+Goal:
+Analyze a B2B SaaS customer support ticket and identify decision-support signals that matter for revenue-aware support operations.
+
+The module should expose a function:
+
+analyze_ticket_risk(data: dict) -> dict
+
+Input dictionary fields:
+- ticket_text: str
+- account_name: str
+- arr: int | float
+- renewal_date: str
+- customer_tier: str
+
+The function should detect and return structured output with:
+- escalation_risk: low | medium | high
+- churn_intent: low | medium | high
+- urgency: low | medium | high
+- executive_dissatisfaction: true | false
+- renewal_timing_signal: true | false
+- vendor_switching_signal: true | false
+- revenue_impact: low | medium | high
+- detected_signals: list[str]
+- summary: short paragraph
+
+Implementation requirements:
+- Use simple Python only
+- Use rule-based logic and keyword patterns
+- Be readable and production-style
+- Handle missing fields gracefully
+- Return a dictionary
+
+Also generate tests for:
+1. a high-risk ticket mentioning renewal, leadership concern, and switching
+2. a low-risk ticket asking a routine support question
+
+Also generate one small example usage file.

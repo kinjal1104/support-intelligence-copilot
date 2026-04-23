@@ -1,0 +1,38 @@
+Build a Streamlit app named support_dashboard.
+
+Goal:
+Create a small UI for Support Intelligence Copilot.
+
+Requirements:
+- Use Streamlit
+- Import analyze_ticket_risk from ticket_risk_analyzer
+- Import generate_next_best_action from next_best_action_generator
+- The UI should contain:
+  - app title and short description
+  - text area for support ticket text
+  - text input for account name
+  - numeric input for ARR
+  - text input for renewal date
+  - select box for customer tier: SMB, Mid-Market, Enterprise
+  - Analyze button
+
+When the user clicks Analyze:
+- run ticket_risk_analyzer
+- run next_best_action_generator
+- show results in clearly separated sections/cards:
+  - risk summary
+  - key detected signals
+  - revenue impact
+  - next best actions
+  - stakeholders to involve
+  - escalation recommendation
+  - executive reply draft
+  - internal notes
+
+Design expectations:
+- clean, minimal, polished
+- readable headings
+- no external database
+- just local execution
+
+Also generate any minimal helper/example file if needed.

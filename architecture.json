@@ -1,0 +1,33 @@
+{
+  "nodes": [
+    {
+      "id": "ticket_risk_analyzer",
+      "label": "ticket_risk_analyzer",
+      "type": "dev_unit"
+    },
+    {
+      "id": "next_best_action_generator",
+      "label": "next_best_action_generator",
+      "type": "dev_unit"
+    },
+    {
+      "id": "support_dashboard",
+      "label": "support_dashboard",
+      "type": "dev_unit"
+    }
+  ],
+  "edges": [
+    {
+      "source": "ticket_risk_analyzer",
+      "target": "next_best_action_generator"
+    },
+    {
+      "source": "ticket_risk_analyzer",
+      "target": "support_dashboard"
+    },
+    {
+      "source": "next_best_action_generator",
+      "target": "support_dashboard"
+    }
+  ]
+}
