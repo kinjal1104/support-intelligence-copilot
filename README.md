@@ -181,5 +181,3 @@ where **prompts are the source of truth** and code is generated from them.
 This is not just a support tool.  
 
 It’s a step toward **revenue-aware, AI-driven customer intelligence**.
-
-> That’s the product roadmap so far — I’d love to talk about the next version.
