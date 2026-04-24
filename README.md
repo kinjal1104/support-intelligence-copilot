@@ -6,12 +6,12 @@ An AI-native decision support system for customer support and customer success t
 
 In B2B SaaS, churn signals don’t start in dashboards — they start in conversations.
 
-Customers rarely say “we’re going to churn.”
+Customers rarely say “I am going to churn.”
 Instead, they say things like:
 
-“Leadership is concerned”
-“Our renewal is next month”
-“We’re evaluating alternatives”
+Leadership is concerned
+Our renewal is next month
+We’re evaluating alternatives
 
 These are not just support issues — they are revenue signals.
 
@@ -26,7 +26,7 @@ The system takes:
 
 And performs three key steps:
 
-1. 🔍 Risk Signal Detection
+🔍 1. Risk Signal Detection
 
 Analyzes the ticket to detect:
 
@@ -37,7 +37,7 @@ Executive dissatisfaction
 Renewal timing signals
 Vendor-switching language
 Revenue impact
-2. 🎯 Next-Best Action Generation
+🎯 2. Next-Best Action Generation
 
 Transforms signals into:
 
@@ -47,7 +47,7 @@ Stakeholders to involve (CSM, AE, etc.)
 Escalation guidance
 Internal notes
 Executive-ready response draft
-3. 📊 Interactive Dashboard
+📊 3. Interactive Dashboard
 Built using Streamlit
 Paste ticket + input metadata
 Instantly view:
@@ -61,8 +61,11 @@ where prompts are the source of truth and code is generated from them.
 
 🔧 Dev Units
 1. ticket_risk_analyzer
+
 Input: Ticket + metadata
+
 Output:
+
 Escalation risk
 Churn intent
 Urgency
@@ -73,8 +76,11 @@ Revenue impact
 Detected signals
 Summary
 2. next_best_action_generator
+
 Input: Analyzer output
+
 Output:
+
 Priority level
 Next-best actions
 Stakeholders
@@ -90,9 +96,6 @@ Modular architecture → each unit is independently improvable
 AI-first system → intelligence lives in prompts, not hardcoded logic
 Decision support → not just insights, but clear actions
 Revenue-aware → connects support signals to business impact
-
-
-
 📚 References
 🔹 PDD & Prompt Engineering
 Prompt Driven Development (PDD): https://github.com/promptdriven/pdd
@@ -104,37 +107,28 @@ Prompt Engineering Best Practices (OpenAI & general LLM concepts)
 🔹 Product / Domain Inspiration
 Zendesk & Intercom (Support intelligence patterns)
 Churn Prediction & Risk Signals (SaaS industry practices)
-
-
 🧪 Example Insight
 
-“We’ve had repeated platform issues… our renewal is next month… leadership is asking whether we should continue…”
+“We’ve had repeated platform issues over the last two weeks, and this is becoming difficult to justify internally. Our renewal is next month, and leadership is asking whether we should continue with your platform if stability doesn’t improve quickly.”
 
-➡️ System detects:
+System detects:
 
 High churn intent
 Executive escalation
 Renewal risk
 
-➡️ System recommends:
+System recommends:
 
 Immediate CSM + AE involvement
 Priority escalation
 Executive-level response
-
-
 🔮 Future Scope
 CRM integrations (Salesforce, HubSpot)
 Real-time ticket ingestion
 Learning feedback loop from outcomes
 Multi-ticket account-level risk scoring
-
-
-
 🏁 Closing
 
 This is not just a support tool.
 
 It’s a step toward revenue-aware, AI-driven customer intelligence.
-
-That’s the product roadmap so far — I’d love to talk about the next version.
