@@ -90,6 +90,9 @@ Modular architecture → each unit is independently improvable
 AI-first system → intelligence lives in prompts, not hardcoded logic
 Decision support → not just insights, but clear actions
 Revenue-aware → connects support signals to business impact
+
+
+
 📚 References
 🔹 PDD & Prompt Engineering
 Prompt Driven Development (PDD): https://github.com/promptdriven/pdd
@@ -101,6 +104,8 @@ Prompt Engineering Best Practices (OpenAI & general LLM concepts)
 🔹 Product / Domain Inspiration
 Zendesk & Intercom (Support intelligence patterns)
 Churn Prediction & Risk Signals (SaaS industry practices)
+
+
 🧪 Example Insight
 
 “We’ve had repeated platform issues… our renewal is next month… leadership is asking whether we should continue…”
@@ -116,11 +121,16 @@ Renewal risk
 Immediate CSM + AE involvement
 Priority escalation
 Executive-level response
+
+
 🔮 Future Scope
 CRM integrations (Salesforce, HubSpot)
 Real-time ticket ingestion
 Learning feedback loop from outcomes
 Multi-ticket account-level risk scoring
+
+
+
 🏁 Closing
 
 This is not just a support tool.
